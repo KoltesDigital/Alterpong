@@ -1,0 +1,8 @@
+#game(ng-show="!error")
+	#scores
+		#score0
+		#score1
+#errors(ng-show="error", ng-switch="error")
+	div(ng-switch-when="closed-sock") Disconnected from the server.
+	div(ng-switch-when="game-full") The game is already full.
+#qrcode

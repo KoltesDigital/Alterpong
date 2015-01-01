@@ -1,0 +1,105 @@
+html, body
+	background-color: black
+	color: white
+	font-family: 'Press Start 2P', cursive
+	font-size: 1.5em
+	margin: 0
+	padding: 0
+	
+@media (max-width: 700px)
+	body
+		font-size: 1em
+
+@media (max-width: 500px)
+	body
+		font-size: 0.75em
+
+body.fullscreen
+	overflow: hidden
+
+a
+	color: white
+
+button, input
+	border-radius: 4px
+	font: inherit
+	padding: 20px
+
+button
+	background: #fff
+	border: 0
+	cursor: pointer
+
+input
+	background: transparent
+	border: 2px solid #fff
+	color: #fff
+	width: 200px
+
+h1
+	font-size: 2em
+	margin-bottom: 0
+	margin-top: 20px
+
+h2
+	font-size: .6em
+	margin-bottom: 60px
+	margin-top: 20px
+
+#index
+	text-align: center
+	
+	form > *
+		display: block
+		margin: 10px auto
+	
+	input
+		// max-width: 120px
+		text-align: center
+
+#credits
+	font-size: .6em
+	margin-bottom: 40px
+	margin-top: 60px
+
+#waiting
+	margin: 50px
+	text-align: center
+
+#game
+	position: absolute
+
+	#scores
+		height: 100%
+		position: absolute
+		width: 100%
+
+	#score0, #score1
+		font-size: 10%
+
+	#score0
+		position: absolute
+		right: 60%
+		text-align: right
+		top: 8%
+
+	#score1
+		left: 60%
+		position: absolute
+		text-align: left
+		top: 8%
+
+#errors
+	height: 100%
+	left: 0
+	position: absolute
+	text-align: center
+	top: 0
+	width: 100%
+
+#qrcode
+	position: absolute
+	visibility: hidden
+	
+	*
+		width: 100%

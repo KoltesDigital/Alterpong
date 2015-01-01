@@ -1,0 +1,12 @@
+#index
+	h1 Alterpong
+	h2 (flickering is intended)
+	form(ng-submit="lobby()")
+		button(type="submit") Enter the lobby
+		p to find opponents
+	p - or -
+	form(ng-submit="join()")
+		input(ng-change="computeSessionId()", ng-model="wantedSessionId", placeholder="Session id", type="text")
+		span(ng-show="wantedSessionId !== sessionId") Will be created as {{sessionId}}
+		button(type="submit") Join or create this session
+	#credits: a(href="http://bloutiouf.com", target="_blank") Bloutiouf 2014
